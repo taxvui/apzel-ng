@@ -1,0 +1,121 @@
+.app-progress-area {
+    &.bg-black {
+        background-color: var(--blackColor);
+    }
+}
+.app-progress-content {
+    padding-left: 15px;
+
+    .sub-title {
+        display: block;
+        margin-bottom: 10px;
+        background: var(--gradientColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+    }
+    h2 {
+        line-height: 1.4;
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+    &.text-white {
+        h2 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: var(--whiteColor);
+            opacity: .9;
+        }
+    }
+}
+.app-progress-image {
+    padding-right: 15px;
+}
+.app-progress-animation-image {
+    padding-right: 15px;
+    
+    img {
+        filter: drop-shadow(15px 25px 50px rgba(25, 34, 64, 0.12));
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .app-progress-image {
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+    .app-progress-content {
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 12px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .app-progress-animation-image {
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .app-progress-image {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .app-progress-content {
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .app-progress-animation-image {
+        margin-bottom: 40px;
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .app-progress-content {
+        padding-left: 0;
+    }
+    .app-progress-image {
+        padding-right: 0;
+    }
+    .app-progress-animation-image {
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}
